@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { BarLoader } from 'react-spinners'
 
-const ShowJson = () => {
+export const ShowJson = () => {
 
     const [responses, setResponses] = useState()
 
@@ -43,5 +43,3 @@ const ShowJson = () => {
         </>
     )
 }
-
-export default ShowJson

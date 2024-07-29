@@ -1,8 +1,6 @@
-import React from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom'
 import { SurveyForm } from "./components/SurveryForm"
-const ShowJson = React.lazy(() => import('./components/ShowJson'))
-import { Loader } from './components/Loader';
+import { ShowJson } from './components/ShowJson';
 
 function App() {
 
@@ -18,9 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SurveyForm />} />
         <Route path="/show-json" element={
-          <React.Suspense fallback={<Loader />}>
-            <ShowJson />
-          </React.Suspense>
+          <ShowJson />
         } />
       </Routes>
     </>
