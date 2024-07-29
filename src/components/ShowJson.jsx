@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export const ShowJson = () => {
+const ShowJson = () => {
 
     const [responses, setResponses] = useState()
 
@@ -40,3 +40,5 @@ export const ShowJson = () => {
         </>
     )
 }
+
+export default ShowJson
