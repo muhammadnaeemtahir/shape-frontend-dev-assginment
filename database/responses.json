@@ -1,28 +1,3 @@
 {
-  "responses": [
-    {
-      "id": "6d14",
-      "title": "Mr",
-      "dob": {
-        "day": "11",
-        "month": "11",
-        "year": "2000"
-      },
-      "rating": 6,
-      "otherSources": "Hello, this is some text",
-      "workLifeBalance": "Ideal"
-    },
-    {
-      "id": "10a4",
-      "title": "Dr",
-      "dob": {
-        "day": "31",
-        "month": "11",
-        "year": "1998"
-      },
-      "rating": 8,
-      "otherSources": "Here is some text from Dr.",
-      "workLifeBalance": "Challenging"
-    }
-  ]
+  "responses": []
 }
