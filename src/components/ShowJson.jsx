@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { BarLoader } from 'react-spinners'
 
 const ShowJson = () => {
 
@@ -32,7 +33,9 @@ const ShowJson = () => {
                                 {JSON.stringify(responses, null, 2)}
                             </pre>
                         ) : (
-                            <p>Loading data...</p>
+                            <d className="d-flex justify-content-center">
+                                <BarLoader />
+                            </d>
                         )}
                     </div>
                 </div>
