@@ -98,7 +98,7 @@ export const SurveyForm = () => {
 
     const saveJsonData = async (data) => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_JSON_SERVER_PORT}/responses`, {
+            const response = await fetch('https://json-database-gray.vercel.app/responses', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -106,13 +106,14 @@ export const SurveyForm = () => {
                 body: JSON.stringify(data),
             });
 
+            setIsSuccess(true)
+            
             if (!response.ok) {
                 throw new Error(response.statusText)
             }
 
-            setIsSuccess(true)
         } catch (error) {
-            console.error('Error:', error.message)
+            // console.error('Error:', error.message)
         }
     }
 

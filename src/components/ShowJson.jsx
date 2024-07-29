@@ -7,7 +7,7 @@ const ShowJson = () => {
     useEffect(() => {
         const getResponses = async () => {
             try {
-                const responses = await fetch(`${import.meta.env.VITE_JSON_SERVER_PORT}/responses`)
+                const responses = await fetch(`https://json-database-gray.vercel.app/responses`)
                 if (!responses.ok) {
                     throw new Error(`HTTP error! status: ${responses.status}`)
                 }
